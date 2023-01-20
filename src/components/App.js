@@ -5,9 +5,9 @@ import { Spin } from "antd";
 import Pollution from "./Pollution";
 // 
 import { Consumer } from "../context";
-import SearchContainer from "./SearchContainer";
-import StationContainer from "./StationContainer";
-import FavouritedContainer from "./FavouritedContainer";
+// import SearchContainer from "./SearchContainer";
+// import StationContainer from "./StationContainer";
+// import FavouritedContainer from "./FavouritedContainer";
 import Home from "./Home";
 import Nav from "./Nav";
 
@@ -24,16 +24,16 @@ class App extends Component {
               ) : (
                 <Switch>
                   <Route exact path="/" component={Home} />
-                  <Route path="/search" component={SearchContainer} />
+                  {/* <Route path="/search" component={SearchContainer} /> */}
                   
                   <Route path="/pollution" exact component={Pollution} />
                   
-                  <Route
+                  {/* <Route
                     path="/station/:naptanId"
                     render={props => <StationContainer {...store} {...props} />}
-                  />
-                  <Route path="/favourited" component={FavouritedContainer} />
-                  <Route render={() => <h1>Not Found</h1>} />
+                  /> */}
+                  {/* <Route path="/favourited" component={FavouritedContainer} /> */}
+                  {/* <Route render={() => <h1>Not Found</h1>} /> */}
                 </Switch>
               )
             }

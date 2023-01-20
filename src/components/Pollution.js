@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import shortid from "shortid";
 
+
 function Pollution(props) {
   const [data, setData] = useState({
     forecastUrl: "",
@@ -25,8 +26,10 @@ function Pollution(props) {
         key={shortid.generate()}
         className="flex content-center justify-center"
       >
-        <h1 key={shortid.generate()} className="text-center">
+        <h1 key={shortid.generate()} className="text-center" > 
+          <strong>
           Pollution Levels
+          </strong>
         </h1>
       </div>
       <div
@@ -57,7 +60,10 @@ function Pollution(props) {
                       key={shortid.generate()}
                       className="flex text-center justify-center"
                     >
-                      Todays Forecast: {info.forecastSummary}
+                      Todays Forecast:-
+                      <strong>
+                       {info.forecastSummary}
+                       </strong>
                     </p>
                     <br key={shortid.generate()} />
                     <table key={shortid.generate()} className="table-fixed">

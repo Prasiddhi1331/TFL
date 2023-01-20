@@ -4,11 +4,11 @@ import "antd/dist/antd.css";
 import "./index.css";
 
 import { Provider } from "./context";
-import App from "./components/App";
+import Pollution from "./components/Pollution";
 
 ReactDOM.render(
   <Provider>
-    <App />
+    <Pollution />
   </Provider>,
   document.getElementById("root")
 );
